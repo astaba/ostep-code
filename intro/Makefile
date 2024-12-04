@@ -1,17 +1,20 @@
+BINR := ./bin
+CFLAGS := -Wall
+.PHONY := all clean
 
-all: cpu mem threads io
+all: ${BINR}/cpu ${BINR}/mem ${BINR}/io ${BINR}/threads
 
 clean:
-	rm -f cpu mem threads io
+	rm -frv ${BINR}/*
 
-cpu: cpu.c
-	gcc -o cpu cpu.c -Wall
+${BINR}/cpu: cpu.c common.h
+	gcc -o $@ $< $(CFLAGS)
 
-mem: mem.c
-	gcc -o mem mem.c -Wall
+${BINR}/mem: mem.c common.h
+	gcc -o $@ $< $(CFLAGS)
 
-threads: threads.c
-	gcc -o threads threads.c -Wall
+${BINR}/io: io.c common.h
+	gcc -o $@ $< $(CFLAGS)
 
-io: io.c
-	gcc -o io io.c -Wall
+${BINR}/threads: threads.c common.h common_threads.h
+	gcc -o $@ $< $(CFLAGS)
