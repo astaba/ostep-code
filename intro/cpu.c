@@ -1,3 +1,6 @@
+// Test run to see CPU virtualization
+// ./cpu.out "A" & ./cpu.out " B" & ./cpu.out "  C" &
+
 #include "common.h"
 #include <stdio.h>
 #include <stdlib.h>
