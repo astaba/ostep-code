@@ -1,6 +1,6 @@
 # Overview
 
-Code from OSTEP chapter [The Abstraction: Address Spaces](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf).
+Code from OSTEP chapter 13 [The Abstraction: Address Spaces](http://pages.cs.wisc.edu/~remzi/OSTEP/vm-intro.pdf).
 
 To compile, just type:
 ```

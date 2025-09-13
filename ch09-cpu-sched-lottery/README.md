@@ -1,7 +1,7 @@
 
 ## Proportional Share Scheduling
 
-Code from OSTEP chapter [Scheduling: Proportional Share](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-lottery.pdf).
+Code from OSTEP chapter 9 [Scheduling: Proportional Share](http://pages.cs.wisc.edu/~remzi/OSTEP/cpu-sched-lottery.pdf).
 
 Compile with:
 
