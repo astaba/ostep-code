@@ -17,4 +17,4 @@ $(BINARIES): %.out: %.c
 	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-	rm -fv *.out
+	rm -fv *.out p4_output.txt
